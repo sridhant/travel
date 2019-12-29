@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel on device</title>
+  <link rel = "icon" type = "image/png" href = "img/6.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700"> 
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">        
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+      *{
+        margin: 0;
+        padding: 0;
+      }
+
+      header{
+        background: url(img/7.jpg);
+        width: 100%;
+        height: 100vh;
+        background-size: 100% 100%;
+        clip-path: polygon(0% 0%,100% 0%,100% 85%,50% 100%,-50% 70%);         
+      }
+
+      .hover:hover{
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+      transform: translateY(-20px);        
+      }
+
+      .unit-1-text img{
+        overflow: hidden;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px; 
+        border-bottom-left-radius: 30px; 
+        border-bottom-right-radius: 30px;                          
+      }
+
+      .unit-1-text:hover{
+        transition: 0.8s ease;
+        transform: scale(1.1);
+        overflow: hidden;        
+      }
+
+      .unit-2-text img{
+        overflow: hidden;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px; 
+        border-bottom-left-radius: 30px; 
+        border-bottom-right-radius: 30px;         
+      }
+
+      .unit-2-text:hover{
+        transition: 0.8s ease;
+        transform: scale(1.1);
+        overflow: hidden;        
+      }
+
+      .unit-3-text img{
+        overflow: hidden;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px; 
+        border-bottom-left-radius: 30px; 
+        border-bottom-right-radius: 30px;         
+      }
+
+      .unit-3-text:hover{
+        transition: 0.8s ease;
+        transform: scale(1.1);
+        overflow: hidden;        
+      }
+
+      .unit-4-text img{
+        overflow: hidden;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px; 
+        border-bottom-left-radius: 30px; 
+        border-bottom-right-radius: 30px;         
+      }
+
+      .unit-4-text:hover{
+        transition: 0.8s ease;
+        transform: scale(1.1);
+        overflow: hidden;        
+      }
+
+      .unit-5-text img{
+        overflow: hidden;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px; 
+        border-bottom-left-radius: 30px; 
+        border-bottom-right-radius: 30px;         
+      }
+
+      .unit-5-text:hover{
+        transition: 0.8s ease;
+        transform: scale(1.1);
+        overflow: hidden;        
+      }
+
+      .unit-6-text img{
+        overflow: hidden;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px; 
+        border-bottom-left-radius: 30px; 
+        border-bottom-right-radius: 30px;         
+      }
+
+      .unit-6-text:hover{
+        transition: 0.8s ease;
+        transform: scale(1.1);
+        overflow: hidden;        
+      }                         
+
+      .unit-1-h5 h5{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 68%;
+        left: 95%;
+        color: #cc6633;
+        font-weight: lighter;                
+        transform: translate(-50%, -50%);
+       -ms-transform: translate(-50%, -50%);
+       -webkit-transform: translate(-50%, -50%); 
+      }
+
+      .unit-1-h3 h3{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 75%;
+        left: 75%;
+        color: white;
+        font-weight: lighter;                        
+        transform: translate(-50%, -50%);
+       -ms-transform: translate(-50%, -50%);
+       -webkit-transform: translate(-50%, -50%); 
+      }
+
+      .unit-2-h5 h5{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 68%;
+        left: 95%;
+        color: #cc6633;
+        font-weight: lighter;                
+        transform: translate(-50%, -50%);
+       -ms-transform: translate(-50%, -50%);
+       -webkit-transform: translate(-50%, -50%); 
+      }
+
+      .unit-2-h3 h3{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 75%;
+        left: 83%;
+        color: white;
+        font-weight: lighter;
+        transform: translate(-50%, -50%);
+       -ms-transform: translate(-50%, -50%);
+       -webkit-transform: translate(-50%, -50%); 
+      }
+
+      .unit-3-h5 h5{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 68%;
+        left: 95%;
+        color: #cc6633;
+        font-weight: lighter;                
+        transform: translate(-50%, -50%);
+       -ms-transform: translate(-50%, -50%);
+       -webkit-transform: translate(-50%, -50%); 
+      }
+
+      .unit-3-h3 h3{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 75%;
+        left: 70%;
+        color: white;
+        font-weight: lighter;
+        transform: translate(-50%, -50%);
+       -ms-transform: translate(-50%, -50%);
+       -webkit-transform: translate(-50%, -50%); 
+      }
+
+      .unit-4-h5 h5{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 68%;
+        left: 95%;
+        color: #cc6633;
+        font-weight: lighter;                
+        transform: translate(-50%, -50%);
+       -ms-transform: translate(-50%, -50%);
+       -webkit-transform: translate(-50%, -50%); 
+      }
+
+      .unit-4-h3 h3{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 75%;
+        left: 80%;
+        color: white;
+        font-weight: lighter;
+        transform: translate(-50%, -50%);
+       -ms-transform: translate(-50%, -50%);
+       -webkit-transform: translate(-50%, -50%); 
+      }
+
+      .unit-5-h5 h5{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 68%;
+        left: 95%;
+        color: #cc6633;
+        font-weight: lighter;                
+        transform: translate(-50%, -50%);
+       -ms-transform: translate(-50%, -50%);
+       -webkit-transform: translate(-50%, -50%); 
+      }
+
+      .unit-5-h3 h3{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 75%;
+        left: 65%;
+        color: white;
+        font-weight: lighter;
+        transform: translate(-50%, -50%);
+       -ms-transform: translate(-50%, -50%);
+       -webkit-transform: translate(-50%, -50%); 
+      }
+
+      .unit-6-h5 h5{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 68%;
+        left: 95%;
+        color: #cc6633;
+        font-weight: lighter;                
+        transform: translate(-50%, -50%);
+       -ms-transform: translate(-50%, -50%);
+       -webkit-transform: translate(-50%, -50%); 
+      }
+
+      .unit-6-h3 h3{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 75%;
+        left: 65%;
+        color: white;
+        font-weight: lighter;
+        transform: translate(-50%, -50%);
+       -ms-transform: translate(-50%, -50%);
+       -webkit-transform: translate(-50%, -50%); 
+      }
+
+      .foot i{
+        display: inline-block;
+      }                                               
+               
+    </style> 
+</head>
+<body>
+
+        <!-- navbar -->
+  <header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-transparent">
+  <a class="navbar-brand" href="#"><img style="width: 100px" src="img/6.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link mr-5 " href="travel.html">Home<span class="sr-only ">(current)</span></a>
+      </li>
+            <li class="nav-item">
+        <a class="nav-link mr-5 " href="https://sridhant.github.io">About me<span class="sr-only ">(current)</span></a>
+      </li>
+
+          <div class="dropdown-menu  " aria-labelledby="navbarDropdown">
+          <a class="dropdown-item  " href="#">My favourite Game</a>
+        <li class="nav-item ml-5">
+        <a class="nav-link mr-5 " href="sound.html">Videos</a>
+      </li>
+      </li>
+    </ul>       
+  </div>
+</nav>
+  </header>
+<!-- navbar ends -->
+<!-- icons  -->
+<div class="container mt-5">
+  <div class="row">
+
+    <div class="hover col-lg-4 col-md-4 col-sm-12">
+      <div class="card mt-5"style="border: 0px">
+        <div class="card-body text-center">
+          <i class="fa-3x fa fa-heart mx-auto"></i>
+          <p class="text-center mt-3">Made with love</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hover col-lg-4 col-md-4 col-sm-12">
+      <div class="card mt-5"style="border: 0px">
+        <div class="card-body text-center">
+          <i class="fa-3x fa fa-mobile"></i>
+          <p class="text-center mt-3">Responsive</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hover col-lg-4 col-md-4 col-sm-12">
+      <div class="card mt-5"style="border: 0px">
+        <div class="card-body text-center">
+          <i class="fa-3x fa fa-desktop mx-auto"></i>
+          <p class="text-center mt-3"> Made with html</p>
+        </div>
+      </div>
+    </div>        
+
+  </div>
+</div>
+<!-- world travel -->
+<!-- japan -->
+<section class="contractus">
+  <div class="container">
+      <h1 class=" text-center text-capitalize text-center mt-5">Wrold travel</h1>
+          <hr class="w-25 mx-auto mt-1">
+   <h5 class="mt-5">Japan</h5>
+   <hr class="w-25 mt-1">
+   <div class="row">
+     
+     <div class="col-lg-6 col-md-6 col-sm-12">
+       <img class="img-fluid" style="border-top-left-radius: 30px;border-bottom-right-radius: 30px;" src="img/4.jpg">
+     </div>
+
+     <div class="col-lg-6 col-md-6 col-sm-12">
+       <p class="mt-3">Japan attracted 31.19 million international tourists in 2018.[1] Japan has 21 World Heritage Sites, including Himeji Castle, Historic Monuments of Ancient Kyoto and Nara. Popular foreigner attractions include Tokyo and Hiroshima, Mount Fuji, ski resorts such as Niseko in Hokkaido, Okinawa, riding the shinkansen and taking advantage of Japan's hotel and hotspring network.<br>The 2017 Travel and Tourism Competitiveness Report ranked Japan 4th out of 141 countries overall, which was the highest in Asia. Japan gained relatively high scores in almost all of the featured aspects, such as health and hygiene, safety and security, and cultural resources and business trave</p>
+     </div>
+
+   </div>
+</div>
+</section>
+<!-- abu dabi -->
+<section class="contractus">
+  <div class="container">
+   <h5 class="mt-5">Abu Dabi</h5>
+   <hr class="w-25 mt-1">
+   <div class="row">
+     
+     <div class="col-lg-6 col-md-6 col-sm-12">
+       <img class="img-fluid" style="border-top-left-radius: 30px;border-bottom-right-radius: 30px;" src="img/20.jpg">
+     </div>
+
+     <div class="col-lg-6 col-md-6 col-sm-12">
+       <p class="mt-3">Abu Dhabi (Arabic: أبو ظبي‎, ʼAbū Ẓaby) is the capital city of the United Arab Emirates. It is in the emirate of Abu Dhabi. Abu Dhabi is one of the seven emirates which form the United Arab Emirates. The city is on a T-shaped island going into the Persian Gulf from the central western coast. The city is 972 km2 in size. The city had a population of 1.14 million people in 2015.Abu Dhabi has many tourist attractions such as the Sheikh Zayed Mosque, Abu Dhabi Louvre Museum, Ferrari World and the Emirates Palace. According to the Department of Culture and Tourism, 4.9 million people visited Abu Dhabi in 2017.</p>
+     </div>
+
+   </div>
+</div>
+</section>
+<!-- india -->
+<section class="contractus">
+  <div class="container">
+   <h5 class="mt-5">India</h5>
+   <hr class="w-25 mt-1">
+   <div class="row">
+     
+     <div class="col-lg-6 col-md-6 col-sm-12">
+       <img class="img-fluid" style="border-top-left-radius: 30px;border-bottom-right-radius: 30px;" src="img/21.jpg">
+     </div>
+
+     <div class="col-lg-6 col-md-6 col-sm-12">
+       <p class="mt-3">Tourism in India is important for the country's economy and is growing rapidly. The World Travel and Tourism Council calculated that tourism generated ₹16.91 lakh crore (US$240 billion) or 9.2% of India's GDP in 2018 and supported 42.673 million jobs, 8.1% of its total employment.The sector is predicted to grow at an annual rate of 6.9% to ₹32.05 lakh crore (US$460 billion) by 2028 (9.9% of GDP).In October 2015, India's medical tourism sector was estimated to be worth US$3 billion, and it is projected to grow to US$7–8 billion by 2020.</p>
+     </div>
+
+   </div>
+</div>
+</section>
+<!-- new york -->
+<section class="contractus">
+  <div class="container">
+   <h5 class="mt-5">New York</h5>
+   <hr class="w-25 mt-1">
+   <div class="row">
+     
+     <div class="col-lg-6 col-md-6 col-sm-12">
+       <img class="img-fluid" style="border-top-left-radius: 30px;border-bottom-right-radius: 30px;" src="img/22.jpg">
+     </div>
+
+     <div class="col-lg-6 col-md-6 col-sm-12">
+       <p class="mt-3">New York City received a ninth consecutive annual record of approximately 65.2 million tourists in 2018, counting not just overnight visitors but anyone visiting for the day from over 50 miles away, including commuters. Overall the city welcomed 37.9 million visitors who stayed overnight in 2018, of which 13.6 million were international. Major destinations include the Empire State Building, Ellis Island, the Statue of Liberty on Liberty Island, Broadway theatre productions, Central Park, Times Square, Coney Island, the Financial District, museums, and sports stadiums. Other major visitor activities include luxury shopping along Fifth and Madison Avenues</p>
+     </div>
+
+   </div>
+</div>
+</section>
+<!-- rome -->
+<section class="contractus">
+  <div class="container">
+   <h5 class="mt-5">Rome</h5>
+   <hr class="w-25 mt-1">
+   <div class="row">
+     
+     <div class="col-lg-6 col-md-6 col-sm-12">
+       <img class="img-fluid" style="border-top-left-radius: 30px;border-bottom-right-radius: 30px;" src="img/23.jpg">
+     </div>
+
+     <div class="col-lg-6 col-md-6 col-sm-12">
+       <p class="mt-3">Rome today is one of the most important tourist destinations of the world, due to the incalculable immensity of its archaeological and art treasures, as well as for the charm of its unique traditions, the beauty of its panoramic views, and the majesty of its magnificent "villas" (parks). Among the most significant resources: plenty of museums – (Capitoline Museums, the Vatican Museums, Galleria Borghese, and a great many others)—aqueducts, fountains, churches, palaces, historical buildings, the monuments and ruins of the Roman Forum, and the Catacombs. Rome is the 3rd most visited city in the EU, after London and Paris, and receives an average of 7–10 million tourists a year, which sometimes doubles on holy years.</p>
+     </div>
+
+   </div>
+</div>
+</section>
+<!-- russia -->
+<section class="contractus">
+  <div class="container">
+   <h5 class="mt-5">Russia</h5>
+   <hr class="w-25 mt-1">
+   <div class="row">
+     
+     <div class="col-lg-6 col-md-6 col-sm-12">
+       <img class="img-fluid" style="border-top-left-radius: 30px;border-bottom-right-radius: 30px;" src="img/24.jpg">
+     </div>
+
+     <div class="col-lg-6 col-md-6 col-sm-12">
+       <p class="mt-3">Tourism in Russia has seen rapid growth since the late Soviet times, first domestic tourism and then international tourism as well. Rich cultural heritage and great natural variety place Russia among the most popular tourist destinations in the world. Not including Crimea, the country contains 23 UNESCO World Heritage Sites, while many more are on UNESCO's tentative lists.Major tourist routes in Russia include a travel around the Golden Ring of ancient cities, cruises on the big rivers including the Volga.</p>
+     </div>
+
+   </div>
+</div>
+</section>
+<!-- singapore -->
+<section class="contractus">
+  <div class="container">
+   <h5 class="mt-5">Singapore</h5>
+   <hr class="w-25 mt-1">
+   <div class="row">
+     
+     <div class="col-lg-6 col-md-6 col-sm-12">
+       <img class="img-fluid" style="border-top-left-radius: 30px;border-bottom-right-radius: 30px;" src="img/25.jpg">
+     </div>
+
+     <div class="col-lg-6 col-md-6 col-sm-12">
+       <p class="mt-3">Tourism in Singapore is a major industry and contributor to the Singaporean economy, attracting 17.4 million international tourists in 2017, more than 3 times of Singapore's total population.[1] It is also environmentally friendly, and maintains natural and heritage conservation programs. Along with this, it also has one of the world's lowest crime rates. As English is the dominant one of its four official languages, it is generally easier for tourists to understand when speaking to the local population of the country, for example, when shopping. Transport in Singapore exhaustively covers most, if not all public venues in Singapore, which increases convenience for tourists.</p>
+     </div>
+
+   </div>
+</div>
+</section>
+<!-- malasia -->
+<section class="contractus">
+  <div class="container">
+   <h5 class="mt-5">Malaysia</h5>
+   <hr class="w-25 mt-1">
+   <div class="row">
+     
+     <div class="col-lg-6 col-md-6 col-sm-12">
+       <img class="img-fluid" style="border-top-left-radius: 30px;border-bottom-right-radius: 30px;" src="img/26.jpg">
+     </div>
+
+     <div class="col-lg-6 col-md-6 col-sm-12">
+       <p class="mt-3">Malaysia was once ranked 9th in the world for tourist arrivals. The Travel and Tourism Competitiveness Report 2017 ranks Malaysia 25th out of 141 countries overall.In an effort to diversify the economy and make Malaysia's economy less dependent on exports, the government pushed to increase tourism in Malaysia. As a result, tourism has become Malaysia's third largest source of foreign exchange income,and accounted for 7% of Malaysia's economy as of 2005.The government agency in charge of promoting tourism in Malaysia is Tourism Malaysia or the Malaysia Tourism Promotion Board (MTPB). On 20 May 1987, the Ministry of Culture, Arts and Tourism (MOCAT) was established and TDC moved to this new ministry. TDC existed from 1972 to 1992</p>
+     </div>
+
+   </div>
+</div>
+</section>
+<!-- indenosia -->
+<section class="contractus">
+  <div class="container">
+   <h5 class="mt-5">Indonesia</h5>
+   <hr class="w-25 mt-1">
+   <div class="row">
+     
+     <div class="col-lg-6 col-md-6 col-sm-12">
+       <img class="img-fluid" style="border-top-left-radius: 30px;border-bottom-right-radius: 30px;" src="img/27.jpg">
+     </div>
+
+     <div class="col-lg-6 col-md-6 col-sm-12">
+       <p class="mt-3">Tourism in Indonesia is an important component of the Indonesian economy as well as a significant source of its foreign exchange revenues. Indonesia was ranked at 20th in the world tourist Industry in 2017, also ranked as the ninth-fastest growing tourist sector in the world, the third-fastest growing in Asia and fastest-growing in Southeast Asia.[1] In 2018, Denpasar, Jakarta and Batam are among of 10 cities in the world with fastest growth in tourism, 32.7, 29.2 and 23.3 percent respectively.The country has planned to achieve 8 percent of GDP from tourism sector and targeted to attract about 20 million of visitors by 2019.</p>
+     </div>
+
+   </div>
+</div>
+</section>
+<!-- bhutan -->
+<section class="contractus">
+  <div class="container">
+   <h5 class="mt-5">Bhutan</h5>
+   <hr class="w-25 mt-1">
+   <div class="row">
+     
+     <div class="col-lg-6 col-md-6 col-sm-12">
+       <img class="img-fluid" style="border-top-left-radius: 30px;border-bottom-right-radius: 30px;" src="img/28.jpg">
+     </div>
+
+     <div class="col-lg-6 col-md-6 col-sm-12">
+       <p class="mt-3">Bhutan  officially the Kingdom of Bhutan is a landlocked country in South Asia. Located in the Eastern Himalayas, it is bordered by the Tibet Autonomous Region of China in the north, the Sikkim state of India and the Chumbi Valley of Tibet in the west, the Arunachal Pradesh state of India in the east, and the Indian states of Assam and West Bengal in the south. Bhutan is geopolitically in South Asia and is the region's second least populous nation after the Maldives. Thimphu is its capital and largest city, while Phuntsholing is its financial center.</p>
+     </div>
+
+   </div>
+</div>
+</section>
+<!-- destinations -->
+<section class="mt-5">
+  <div class="container">
+      <h1 class=" text-center text-capitalize text-center mt-5">Your Favourite Destinations</h1>
+          <hr class="w-25 mx-auto mt-1">    
+    <div class="row">
+
+      <div class="col-lg-4 col-md-4 col-sm-12 mt-5">
+            <div class="unit-1-text">
+              <img class="img-fluid black" style="filter: brightness(60%);" src="img/8.jpg">
+            </div>
+            <div class="unit-1-h5">
+              <h5>$590</h5>
+              <div class="unit-1-h3">
+                <h3>Santorini,Greece</h3>
+              </div>
+            </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-12 mt-5">
+            <div class="unit-2-text">
+              <img class="img-fluid black" style="filter: brightness(60%);" src="img/9.jpg">
+            </div>
+            <div class="unit-2-h5">
+              <h5>$390</h5>
+              <div class="unit-2-h3">
+                <h3>Rome,Italy</h3>
+              </div>
+            </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-12 mt-5">
+            <div class="unit-3-text">
+              <img class="img-fluid black" style="filter: brightness(60%);" src="img/10.jpg">
+            </div>
+            <div class="unit-3-h5">
+              <h5>$390</h5>
+              <div class="unit-3-h3">
+                <h3>Mount Fuji,Japan</h3>
+              </div>
+            </div>
+      </div>
+                                  
+    </div>  
+
+    <div class="row mt-5">
+      
+      <div class="col-lg-4 col-md-4 col-sm-12 mt-5">
+            <div class="unit-4-text">
+              <img class="img-fluid black" style="filter: brightness(60%);" src="img/11.jpg">
+            </div>
+            <div class="unit-4-h5">
+              <h5>$320</h5>
+              <div class="unit-4-h3">
+                <h3>Camels,Dubai</h3>
+              </div>
+            </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-12 mt-5">
+            <div class="unit-5-text">
+              <img class="img-fluid black" style="filter: brightness(60%);" src="img/12.jpg">
+            </div>
+            <div class="unit-5-h5">
+              <h5>$290</h5>
+              <div class="unit-5-h3">
+                <h3>Elizabeth Tower,London</h3>
+              </div>
+            </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-12 mt-5">
+            <div class="unit-6-text">
+              <img class="img-fluid black" style="filter: brightness(60%);" src="img/13.jpg">
+            </div>
+            <div class="unit-6-h5">
+              <h5>$390</h5>
+              <div class="unit-6-h3">
+                <h3>Opera House,Australia</h3>
+              </div>
+            </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+   <!-- Testimonials -->
+    <div class="site-section block-13 bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7">
+            <h2 class="font-weight-light text-black text-center">Testimonials</h2>
+          </div>
+        </div>
+
+        <div class="nonloop-block-13 owl-carousel">
+
+          <div class="item">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 mb-5">
+                  <img src="img/14.jpg" alt="Image" class="img-md-fluid">
+                </div>
+                <div class="overlap-left col-lg-6 bg-white p-md-5 align-self-center">
+                  <p class="text-black lead">&ldquo;“Beginning today, treat everyone you meet as if they were going to be dead by midnight. Extend to them all the care, kindness and understanding you can muster, and do it with no thought of any reward. Your life will never be the same again.”&rdquo;</p>
+                  <p class="">&mdash; <em>James Martin</em>, <a href="#">Traveler</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 mb-5">
+                  <img src="img/15.jpg" alt="Image" class="img-md-fluid">
+                </div>
+                <div class="overlap-left col-lg-6 bg-white p-md-5 align-self-center">
+                  <p class="text-black lead">&ldquo;“Let us try to teach generosity and altruism, because we are born selfish. Let us understand what our own selfish genes are up to, because we may then at least have the chance to upset their designs, something that no other species has ever aspired to do.”&rdquo;</p>
+                  <p class="">&mdash; <em>Clair Augustin</em>, <a href="#">Traveler</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 mb-5">
+                  <img src="img/16.jpg" alt="Image" class="img-md-fluid">
+                </div>
+                <div class="overlap-left col-lg-6 bg-white p-md-5 align-self-center">
+                  <p class="text-black lead">&ldquo;“When you are able to shift your inner awareness to how you can serve others, and when you make this the central focus of your life, you will then be in a position to know true miracles in your progress toward prosperity.”&rdquo;</p>
+                  <p class="">&mdash; <em>James Martin</em>, <a href="#">Traveler</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  <!-- said by -->
+  <section>   
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7">
+            <h2 class="font-weight-light text-black text-center">Happy clients</h2>
+          </div>
+        </div>      
+      <div class="row">
+
+        <div class="col-lg-4 col-md-4 col-sm-12 mt-3">
+
+            <div class="card-body"style="text-align: center;">
+              <img class="img-thumbnail w-50 h-50 text-center" style="border-radius: 50%;" src="img/17.jpg">
+              <h2 class="text-center mt-3"style="font-weight: lighter;">John Sawyer</h2>
+              <p class="text-center">It is very useful website I love it very much I also hope that others people like it and there would be many likes</p>
+            </div>
+            <div class="foot card-footer text-center">
+              <i class="fa-2x fa fa-twitter"style="cursor: pointer;"></i>              
+              <i class="fa-2x fa fa-thumbs-up ml-5 "style="cursor: pointer;"></i>
+              <i class="fa-2x fa fa-thumbs-down ml-5 "style="cursor: pointer;"></i>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 mt-3">
+
+            <div class="card-body"style="text-align: center;">
+              <img class="img-thumbnail w-50 h-50 text-center" style="border-radius: 50%;" src="img/18.jpg">
+              <h2 class="text-center mt-3"style="font-weight: lighter;">Claire Peters</h2>
+              <p class="text-center">It is useful delightful and very user friendly website I hope everybody likes it.</p>
+            </div>
+            <div class="foot card-footer text-center">
+              <i class="fa-2x fa fa-twitter"style="cursor: pointer;"></i>              
+              <i class="fa-2x fa fa-thumbs-up ml-5 "style="cursor: pointer;"></i>
+              <i class="fa-2x fa fa-thumbs-down ml-5 "style="cursor: pointer;"></i>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 mt-3">
+
+            <div class="card-body"style="text-align: center;">
+              <img class="img-thumbnail w-50 h-50 text-center" style="border-radius: 50%;" src="img/19.jpg">
+              <h2 class="text-center mt-3"style="font-weight: lighter;">Jean McMiller</h2>
+              <p class="text-center">Everything is ok but it need to improve a bit but also it is very useful.I hope your next website would be better</p>
+            </div>
+            <div class="foot card-footer text-center">
+              <i class="fa-2x fa fa-twitter "style="cursor: pointer;"></i>              
+              <i class="fa-2x fa fa-thumbs-up ml-5 "style="cursor: pointer;"></i>
+              <i class="fa-2x fa fa-thumbs-down ml-5 "style="cursor: pointer;"></i>
+            </div>
+
+        </div>                
+
+      </div>
+    </div>
+  </section>
+
+<footer>
+  <img style="width: 100%" src="img/29.png">
+</footer>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
